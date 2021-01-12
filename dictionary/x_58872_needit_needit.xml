@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Tipo de solicitud" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="RRHH" sequence="0" value="rrhh"/>
+                <element inactive_on_update="false" label="Instalaciones" sequence="1" value="instalaciones"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Su eleccion de departamento" sequence="3" value="tu_eleccion"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal_1" label="Lo que necesita" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Recursos humanos 1" sequence="0" value="rrhh1"/>
+                <element inactive_on_update="false" label="Recursos humanos 2" sequence="1" value="rrhh2"/>
+                <element inactive_on_update="false" label="Instalaciones 1" sequence="2" value="instalaciones_1"/>
+                <element inactive_on_update="false" label="Instalaciones 1" sequence="3" value="instalaciones_2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal_1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal_2"/>
+                <element inactive_on_update="false" label="Eleccion dpto 1" sequence="6" value="eleccion_dpto_1"/>
+                <element inactive_on_update="false" label="Eleccion dpto 1" sequence="7" value="eleccion_dpto_2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Cuando sea necesario" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Solicitado para" mandatory="true" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>
